@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Tutor1 : MonoBehaviour
 {
     public GameObject theRobot;
-    public AudioSource robotVoice;
     public GameObject pannelTutor;
     public GameObject text0;
     public GameObject text1;
@@ -14,6 +14,8 @@ public class Tutor1 : MonoBehaviour
     public GameObject text4;
     public GameObject theStartTrigger;
     public GameObject theBlocker;
+
+    public AudioSource robotVoice;
 
     void OnTriggerEnter(Collider other)
     {

@@ -5,11 +5,12 @@ using UnityEngine;
 public class KeyPickup1 : MonoBehaviour
 {
     public GameObject theKey;
-    public AudioSource keyPickupSound;
     public GameObject theLeftDoor;
     public GameObject theRightDoor;
-    public AudioSource doorOpenSound;
     public GameObject theProtect1;
+
+    public AudioSource keyPickupSound;
+    public AudioSource doorOpenSound;
 
     void OnTriggerEnter(Collider other)
     {

@@ -5,8 +5,10 @@ using UnityEngine;
 public class FirstAidBox : MonoBehaviour
 {
     public GameObject theBox;
-    public AudioSource increaseBloodSound;
     public GameObject bloodBar;
+
+    public AudioSource increaseBloodSound;
+
     public int currentBlood;
 
     void OnTriggerEnter(Collider other)

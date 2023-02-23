@@ -6,9 +6,10 @@ using UnityEngine.UI;
 public class GlobalBlood : MonoBehaviour
 {
     public GameObject healthDisplay;
+    public GameObject bloodBarUI;
     public static int healthValue;
     public int internalHealth;
-    public GameObject bloodBarUI;
+
 
     void Start()
     {

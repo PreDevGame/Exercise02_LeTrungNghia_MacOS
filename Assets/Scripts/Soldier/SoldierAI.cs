@@ -7,13 +7,16 @@ using UnityEngine.UI;
 public class SoldierAI : MonoBehaviour
 {
     public string hitTag;
-    public bool lookingAtPlayer = false;
-    public GameObject theSoldier;
-    public AudioSource fireSound;
-    public bool isFiring = false;
     public float fireRate = 0.025f;
+
+    public GameObject theSoldier;
     public GameObject bloodPlayerLoss;
     public GameObject bloodPlayerBar;
+
+    public AudioSource fireSound;
+
+    public bool lookingAtPlayer = false;
+    public bool isFiring = false;
 
 
     void Start()

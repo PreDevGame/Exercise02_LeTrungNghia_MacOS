@@ -8,8 +8,6 @@ public class Victory : MonoBehaviour
 {
     public GameObject theTreasure;
     public GameObject theBook;
-    public AudioSource treasureSound;
-    public AudioSource victorySound;
     public GameObject theRobot;
     public GameObject vicoryPannel;
     public GameObject totalScorePannel;
@@ -18,6 +16,11 @@ public class Victory : MonoBehaviour
     public GameObject magicBookValue;
     public GameObject totalScoreValue;
     public GameObject soldierKilledValue;
+
+    public AudioSource treasureSound;
+    public AudioSource victorySound;
+    public AudioSource gameMusic;
+
 
     void OnTriggerEnter(Collider other)
     {
@@ -34,6 +37,7 @@ public class Victory : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         treasureSound.Play();
+        gameMusic.Pause();
         theTreasure.GetComponent<Animator>().Play("ArmatureAction");
         yield return new WaitForSeconds(8);
         treasureSound.Pause();

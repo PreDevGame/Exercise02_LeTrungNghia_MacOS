@@ -1915,11 +1915,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theKey: {fileID: 45646978}
-  keySound: {fileID: 17696888}
   theLeftDoor: {fileID: 16023024}
   theRightDoor: {fileID: 1217622509}
-  doorOpenSound: {fileID: 437185449}
   theProtect4: {fileID: 1619345876}
+  keySound: {fileID: 17696888}
+  doorOpenSound: {fileID: 437185449}
 --- !u!135 &45646980
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5670,11 +5670,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theKey: {fileID: 170845715}
-  keyPickupSound: {fileID: 17696888}
   theLeftDoor: {fileID: 905292243}
   theRightDoor: {fileID: 905292242}
-  doorOpenSound: {fileID: 437185449}
   theProtect1: {fileID: 1756953673}
+  keyPickupSound: {fileID: 17696888}
+  doorOpenSound: {fileID: 437185449}
 --- !u!135 &170845718
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16064,10 +16064,10 @@ RectTransform:
   m_Father: {fileID: 37828381}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 120.35858, y: -617.31177}
-  m_SizeDelta: {x: 240.7205, y: 107.4105}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 120.36025, y: 53.70526}
+  m_SizeDelta: {x: 240.7205, y: 107.41052}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &564229457
 MonoBehaviour:
@@ -16253,7 +16253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b4ec3e342cb4458199e6dd7cb033947, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalSolider: 0
+  manyOfSolider: 0
   soldierValue: {fileID: 631317097}
 --- !u!1 &568453769
 GameObject:
@@ -16530,8 +16530,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theBox: {fileID: 2116296192}
-  increaseBloodSound: {fileID: 1739757406}
   bloodBar: {fileID: 1782985692}
+  increaseBloodSound: {fileID: 1739757406}
   currentBlood: 0
 --- !u!135 &576147422
 SphereCollider:
@@ -17872,7 +17872,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theRobot: {fileID: 620240660}
-  robotVoice: {fileID: 992291051}
   pannelTutor: {fileID: 1399734391}
   text0: {fileID: 1872903930}
   text1: {fileID: 591154025}
@@ -17881,6 +17880,7 @@ MonoBehaviour:
   text4: {fileID: 1476638499}
   theStartTrigger: {fileID: 628393957}
   theBlocker: {fileID: 1601128550}
+  robotVoice: {fileID: 992291051}
 --- !u!65 &628393959
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18476,9 +18476,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theRobot: {fileID: 620240660}
   tutorText: {fileID: 120899158}
-  robotVoice: {fileID: 992291051}
   theTrigger: {fileID: 644337295}
   theBlocker2: {fileID: 1601128550}
+  robotVoice: {fileID: 992291051}
 --- !u!65 &644337298
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19086,8 +19086,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theBox: {fileID: 1226742101}
-  increaseBloodSound: {fileID: 1739757406}
   bloodBar: {fileID: 1782985692}
+  increaseBloodSound: {fileID: 1739757406}
   currentBlood: 0
 --- !u!1 &659181790
 GameObject:
@@ -33391,8 +33391,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthDisplay: {fileID: 2122623632}
-  internalHealth: 0
   bloodBarUI: {fileID: 1782985692}
+  internalHealth: 0
 --- !u!1 &1161823638
 GameObject:
   m_ObjectHideFlags: 0
@@ -35458,8 +35458,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theTreasure: {fileID: 865320432}
   theBook: {fileID: 2118084109}
-  treasureSound: {fileID: 927237542}
-  victorySound: {fileID: 1548351232}
   theRobot: {fileID: 620240660}
   vicoryPannel: {fileID: 744878010}
   totalScorePannel: {fileID: 230324939}
@@ -35468,6 +35466,9 @@ MonoBehaviour:
   magicBookValue: {fileID: 1247376907}
   totalScoreValue: {fileID: 649417945}
   soldierKilledValue: {fileID: 1955857388}
+  treasureSound: {fileID: 927237542}
+  victorySound: {fileID: 1548351232}
+  gameMusic: {fileID: 2084056230}
 --- !u!65 &1247451246
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37404,12 +37405,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theGun: {fileID: 772370728}
   muzzelFlash: {fileID: 1963214626}
-  gunFire: {fileID: 1732924522}
-  NoAnyAmmo: {fileID: 1015933684}
-  soldierFallSound: {fileID: 539233659}
-  isFiring: 0
-  soldierTag: 
-  soldierBloodLoss: 0
   playerBloodLoss: {fileID: 1483813098}
   bloodSoldierBar1: {fileID: 1866366126}
   theSoldier1: {fileID: 1095242065}
@@ -37426,6 +37421,12 @@ MonoBehaviour:
   theKey3: {fileID: 1309871255}
   theKey4: {fileID: 45646978}
   theKey5: {fileID: 1364799503}
+  gunFire: {fileID: 1732924522}
+  NoAnyAmmo: {fileID: 1015933684}
+  soldierFallSound: {fileID: 539233659}
+  isFiring: 0
+  soldierTag: 
+  soldierBloodLoss: 0
 --- !u!1 &1286325699
 GameObject:
   m_ObjectHideFlags: 0
@@ -37949,11 +37950,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theKey: {fileID: 1309871255}
-  keySound: {fileID: 17696888}
   theLeftDoor: {fileID: 827929340}
   theRightDoor: {fileID: 996614346}
-  doorOpenSound: {fileID: 437185449}
   theProtect3: {fileID: 457562273}
+  keySound: {fileID: 17696888}
+  doorOpenSound: {fileID: 437185449}
 --- !u!95 &1309871257
 Animator:
   serializedVersion: 5
@@ -39787,11 +39788,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theKey: {fileID: 1364799503}
-  keySound: {fileID: 17696888}
   theLeftDoor: {fileID: 2072415642}
   theRightDoor: {fileID: 2072415641}
-  doorOpenSound: {fileID: 437185449}
   theProtect5: {fileID: 1645087327}
+  keySound: {fileID: 17696888}
+  doorOpenSound: {fileID: 437185449}
 --- !u!135 &1364799506
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -40044,13 +40045,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitTag: 
-  lookingAtPlayer: 0
-  theSoldier: {fileID: 1654839260}
-  fireSound: {fileID: 410056984}
-  isFiring: 0
   fireRate: 1.5
+  theSoldier: {fileID: 1654839260}
   bloodPlayerLoss: {fileID: 1483813098}
   bloodPlayerBar: {fileID: 1782985692}
+  fireSound: {fileID: 410056984}
+  lookingAtPlayer: 0
+  isFiring: 0
 --- !u!1 &1385640916
 GameObject:
   m_ObjectHideFlags: 0
@@ -40096,13 +40097,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitTag: 
-  lookingAtPlayer: 0
-  theSoldier: {fileID: 1461103780}
-  fireSound: {fileID: 410056984}
-  isFiring: 0
   fireRate: 1.5
+  theSoldier: {fileID: 1461103780}
   bloodPlayerLoss: {fileID: 1483813098}
   bloodPlayerBar: {fileID: 1782985692}
+  fireSound: {fileID: 410056984}
+  lookingAtPlayer: 0
+  isFiring: 0
 --- !u!1 &1388983371
 GameObject:
   m_ObjectHideFlags: 0
@@ -52573,13 +52574,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitTag: 
-  lookingAtPlayer: 0
-  theSoldier: {fileID: 1158977784}
-  fireSound: {fileID: 410056984}
-  isFiring: 0
   fireRate: 1.5
+  theSoldier: {fileID: 1158977784}
   bloodPlayerLoss: {fileID: 1483813098}
   bloodPlayerBar: {fileID: 1782985692}
+  fireSound: {fileID: 410056984}
+  lookingAtPlayer: 0
+  isFiring: 0
 --- !u!1 &1747625178
 GameObject:
   m_ObjectHideFlags: 0
@@ -53696,11 +53697,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theKey: {fileID: 1772213469}
-  keySound: {fileID: 17696888}
   theLeftDoor: {fileID: 885269525}
   theRightDoor: {fileID: 2053410561}
-  doorOpenSound: {fileID: 437185449}
   theProtect2: {fileID: 870499518}
+  keySound: {fileID: 17696888}
+  doorOpenSound: {fileID: 437185449}
 --- !u!1 &1772594698
 GameObject:
   m_ObjectHideFlags: 0
@@ -63275,13 +63276,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitTag: 
-  lookingAtPlayer: 0
-  theSoldier: {fileID: 1095242065}
-  fireSound: {fileID: 410056984}
-  isFiring: 0
   fireRate: 1.5
+  theSoldier: {fileID: 1095242065}
   bloodPlayerLoss: {fileID: 1483813098}
   bloodPlayerBar: {fileID: 1782985692}
+  fireSound: {fileID: 410056984}
+  lookingAtPlayer: 0
+  isFiring: 0
 --- !u!1 &2142257755
 GameObject:
   m_ObjectHideFlags: 0

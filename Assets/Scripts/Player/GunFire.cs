@@ -7,12 +7,6 @@ public class GunFire : MonoBehaviour
 {
     public GameObject theGun;
     public GameObject muzzelFlash;
-    public AudioSource gunFire;
-    public AudioSource NoAnyAmmo;
-    public AudioSource soldierFallSound;
-    public bool isFiring = false;
-    public string soldierTag;
-    public bool soldierBloodLoss = false;
     public GameObject playerBloodLoss;
 
     public GameObject bloodSoldierBar1;
@@ -31,6 +25,14 @@ public class GunFire : MonoBehaviour
     public GameObject theKey3;
     public GameObject theKey4;
     public GameObject theKey5;
+
+    public AudioSource gunFire;
+    public AudioSource NoAnyAmmo;
+    public AudioSource soldierFallSound;
+
+    public bool isFiring = false;
+    public string soldierTag;
+    public bool soldierBloodLoss = false;
 
     public static int theSoliderKilled = 0;
 

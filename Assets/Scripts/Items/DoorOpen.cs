@@ -6,8 +6,9 @@ public class DoorOpen : MonoBehaviour
 {
     public GameObject theLeftDoor;
     public GameObject theRightDoor;
-    public AudioSource doorOpenSound;
     public GameObject proctectDoor1;
+
+    public AudioSource doorOpenSound;
 
     void OnTriggerEnter(Collider other)
     {
