@@ -7,16 +7,16 @@ using UnityEngine.UI;
 public class SoldierScoreBoard : MonoBehaviour
 {
     [SerializeField]
-    private int totalSolider;
+    private int manyOfSolider;
     public GameObject soldierValue;
 
     void Start()
     {
-        totalSolider = 4;
+        manyOfSolider = 0;
     }
     void Update()
     {
-        totalSolider = GunFire.theSoliderKilled;
-        soldierValue.GetComponent<Text>().text = "" + totalSolider;
+        manyOfSolider = GunFire.theSoliderKilled;
+        soldierValue.GetComponent<Text>().text = "" + manyOfSolider;
     }
 }

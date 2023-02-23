@@ -14,14 +14,7 @@ public class ScoreUI : MonoBehaviour
     }
     void LateUpdate()
     {
-        if(GunFire.theSoliderKilled == 4)
-        {
-            theCurrentScore = 0;
-        }
-        else
-        {
-            theCurrentScore = GiftPickup.theScoreValue;
-        }
+        theCurrentScore = GiftPickup.theScoreValue;
         theScoreText.GetComponent<Text>().text = "" + theCurrentScore;
     }
 }

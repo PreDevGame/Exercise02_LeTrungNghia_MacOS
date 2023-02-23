@@ -20,7 +20,7 @@ public class PauseGame : MonoBehaviour
     {
         if(Input.GetButtonDown("Cancel"))
         {
-            SetCursorState(cursorLocked);
+            SetCursorNone(cursorLocked);
             if (pauseGame == false)
             {
                 Time.timeScale = 0;
@@ -47,9 +47,14 @@ public class PauseGame : MonoBehaviour
         }
     }
 
-    private void SetCursorState(bool newState)
+    private void SetCursorNone(bool newState1)
     {
-        Cursor.lockState = newState ? CursorLockMode.None : CursorLockMode.Locked;
+        Cursor.lockState = newState1 ? CursorLockMode.None : CursorLockMode.Locked;
+    }
+
+    private void SetCursorLocked(bool newState2)
+    {
+        Cursor.lockState = newState2 ? CursorLockMode.Locked : CursorLockMode.None;
     }
 
     public void ContinueGame()
@@ -60,6 +65,7 @@ public class PauseGame : MonoBehaviour
         robotVoice.UnPause();
         pauseGameUI.SetActive(false);
         Cursor.visible = false;
+        SetCursorLocked(cursorLocked);
         Blocker.SetActive(false);
         Time.timeScale = 1;
     }
@@ -72,7 +78,11 @@ public class PauseGame : MonoBehaviour
         robotVoice.UnPause();
         pauseGameUI.SetActive(false);
         Cursor.visible = false;
+        SetCursorLocked(cursorLocked);
         Blocker.SetActive(false);
+        GlobalAmmo.theAmmoValue = 0;
+        GunFire.theSoliderKilled = 0;
+        ScoreUI.theCurrentScore = 0;
         Time.timeScale = 1;
         SceneManager.LoadScene(1);
     }
@@ -84,7 +94,8 @@ public class PauseGame : MonoBehaviour
         gameAudio.UnPause();
         robotVoice.UnPause();
         pauseGameUI.SetActive(false);
-        Cursor.visible = false;
+        Cursor.visible = true;
+        SetCursorNone(cursorLocked);
         Blocker.SetActive(false);
         Time.timeScale = 1;
         SceneManager.LoadScene(0);

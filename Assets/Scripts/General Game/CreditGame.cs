@@ -16,8 +16,7 @@ public class CreditGame : MonoBehaviour
     IEnumerator creditAction()
     {
         creditText.GetComponent<Animator>().Play("Credit");
-        yield return new WaitForSeconds(15);
-        fakeOut.SetActive(true);
+        yield return new WaitForSeconds(12);
         SceneManager.LoadScene(0);
     }
 }
